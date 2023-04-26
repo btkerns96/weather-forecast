@@ -5,3 +5,24 @@ const searchInput = document.getElementById('search-input');
 const historyList = document.getElementById('history-list');
 const currentWeatherInfo = document.getElementById('current-weather-info');
 const forecastContainer = document.getElementById('forecast-container');
+
+searchBtn.addEventListener('click', () => {
+    const city = searchInput.value;
+    if (city) {
+        fetchWeatherData(city);
+        addToHistory(city);
+    }
+});
+
+historyList.addEventListener('click', (event) => {
+    if (event.target.tagName === 'LI') {
+        const city = event.target.textContent;
+        fetchWeatherData(city);
+    }
+});
+
+function addToHistory(city) {
+    const li = document.createElement('li');
+    li.textContent = city;
+    historyList.appendChild(li);
+}

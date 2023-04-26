@@ -6,3 +6,29 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <section class="search">
+            <input type="text" id="search-input" placeholder="Search for a city">
+            <button id="search-btn">Search</button>
+        </section>
+        <section class="history">
+            <h2>Search History</h2>
+            <ul id="history-list"></ul>
+        </section>
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <div id="current-weather-info"></div>
+        </section>
+        <section class="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,8 +1,22 @@
-
 body {
   font-family: Arial, sans-serif;
 }
 
 header {
   text-align: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.history {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.current-weather, .forecast {
+  margin-top: 1rem;
 }
